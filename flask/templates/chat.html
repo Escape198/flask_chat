@@ -1,9 +1,10 @@
+{% extends 'base.html' %}
 <html>
     <head>
         <title>Flask-SocketIO-Chat: {{ room }}</title>
         <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
   <script type="text/javascript" src="//cdn.socket.io/4.4.1/socket.io.min.js"></script>
-        <script type="text/javascript" src="{{url_for('static', filename='index.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/index.js')}}"></script>
     </head>
     <body>
         <h1>Flask-SocketIO-Chat: {{ room }}</h1>
